@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TempCalc1</string>
+
+    <string name="farenheit">Farenheit</string>
+    <string name="celcius">Celcius</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

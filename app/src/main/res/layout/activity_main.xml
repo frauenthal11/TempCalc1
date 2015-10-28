@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/topSection">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:id="@+id/imageView"
+            android:src="@drawable/temp"
+            android:layout_gravity="center" />
+
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Temperature Converter"
+        android:id="@+id/Title"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25sp" />
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Degrees"
+            android:id="@+id/degreeText"
+            android:textSize="30sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|center_horizontal"
+            android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="66dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Farenheit"
+                android:id="@+id/farenheitText"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/farenheitNum"
+                android:layout_weight="1"
+                android:layout_gravity="top" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="66dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/celcius"
+                android:id="@+id/celciusText"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:ems="10"
+                android:id="@+id/celciusNum"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:id="@+id/calculate"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</LinearLayout>
